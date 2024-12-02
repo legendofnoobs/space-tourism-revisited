@@ -22,18 +22,18 @@ function Navbar() {
 			</div>
 
 			{/* Desktop Links */}
-			<ul className='hidden lg:flex gap-3 text-white gap-x-10 tracking-widest'>
+			<ul className='hidden lg:flex gap-3 text-white gap-x-10 translate-x-2 font-BarlowCondensed'>
 				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/' ? 'border-white' : ''}`}>
-					<Link className="py-8" to="/"><span>00</span> Home</Link>
+					<Link className="py-8 tracking-widest text-xl" to="/"><span className='font-bold'>00</span> Home</Link>
 				</li>
 				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/about' ? 'border-white' : ''}`}>
-					<Link className="py-8" to="/about"><span>01</span> Destination</Link>
+					<Link className="py-8 tracking-widest text-xl" to="/about"><span className='font-bold'>01</span> Destination</Link>
 				</li>
 				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/contact' ? 'border-white' : ''}`}>
-					<Link className="py-8" to="/contact"><span>02</span> Crew</Link>
+					<Link className="py-8 tracking-widest text-xl" to="/contact"><span className='font-bold'>02</span> Crew</Link>
 				</li>
 				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/technology' ? 'border-white' : ''}`}>
-					<Link className="py-8" to="/technology"><span>03</span> Technology</Link>
+					<Link className="py-8 tracking-widest text-xl" to="/technology"><span className='font-bold'>03</span> Technology</Link>
 				</li>
 			</ul>
 
@@ -41,7 +41,7 @@ function Navbar() {
 			<div
 				className={`fixed top-0 left-0 h-full w-64 bg-black bg-opacity-90 backdrop-blur-lg transform transition-transform duration-300 ease-in-out z-50 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
 			>
-				<ul className='text-white flex flex-col gap-y-8 mt-20 p-10 bg-black h-screen z-10'>
+				<ul className='text-white flex flex-col gap-y-8 mt-20 p-10 bg-black h-screen z-10 font-BarlowCondensed tracking-widest'>
 					<li className={`border-transparent border-b-4 hover:border-white ${location.pathname === '/' ? 'border-white' : ''}`}>
 						<Link className="py-8" to="/" onClick={toggleMenu}><span>00</span> Home</Link>
 					</li>

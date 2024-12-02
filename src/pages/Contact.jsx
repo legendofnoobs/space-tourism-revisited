@@ -39,15 +39,15 @@ function Destination() {
 	const [activeDestination, setActiveDestination] = useState(destinations.Moon);
 
 	return (
-		<div className="bg-[url(./assets/DesktopCrew.png)] bg-no-repeat bg-cover h-screen flex justify-between items-start flex-col pt-20 max-[637px]:pt-20 max-[637px]:px-5">
+		<div className="bg-black bg-[url(./assets/DesktopCrew.png)] bg-no-repeat bg-cover h-screen flex justify-between items-start flex-col pt-20 max-[637px]:pt-20 max-[637px]:px-5 max-[637px]:">
 			<div className='pl-52 pt-[50px] max-[1025px]:px-10 max-[637px]:pl-0 max-[637px]:pt-0'>
-				<h1 className='text-white text-3xl max-[637px]:text-2xl'><span>02 </span>MEET YOUR CREW</h1>
+				<h1 className='text-white text-3xl max-[637px]:text-2xl font-BarlowCondensed tracking-widest'><span>02 </span>MEET YOUR CREW</h1>
 			</div>
 			<div className=" w-full flex justify-between items-center px-52 gap-y-1 max-[1025px]:flex-col max-[1025px]:px-20 max-[1025px]:gap-y-20 max-[637px]:flex-col max-[637px]:px-0 max-[637px]:gap-y-10">
-				<div className="w-[700px] h-[300px] text-white flex flex-col justify-between max-[1025px]:text-center max-[1025px]:items-center max-[637px]:w-full max-[637px]:gap-y-5 max-[637px]:h-[240px]">
-					<h3 className='text-white text-3xl max-[637px]:text-xl'>{activeDestination.job}</h3>
-					<h1 className="text-6xl max-[637px]:text-2xl">{activeDestination.name}</h1>
-					<p className="text-lg leading-8 w-[450px] h-[160px] max-[1025px]:h-[160px] max-[1025px]:w-[550px] max-[637px]:text-sm max-[637px]:w-full max-[637px]:h-auto">
+				<div className="w-[700px] h-[300px] text-white flex flex-col justify-between max-[1025px]:text-center max-[1025px]:items-center max-[637px]:w-full max-[637px]:gap-y-5 max-[637px]:h-auto">
+					<h3 className='text-white text-3xl max-[637px]:text-xl font-Bellefair mb-[15px]'>{activeDestination.job}</h3>
+					<h1 className="text-6xl max-[637px]:text-2xl font-Bellefair mb-[27px]">{activeDestination.name}</h1>
+					<p className="text-lg leading-8 w-[450px] h-[160px] max-[1025px]:h-[160px] max-[1025px]:w-[550px] max-[637px]:text-sm max-[637px]:w-full max-[637px]:h-auto font-Barlow mb-[120px] max-[637px]:mb-[50px]">
 						{activeDestination.description}
 					</p>
 					

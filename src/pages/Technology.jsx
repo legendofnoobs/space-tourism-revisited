@@ -31,9 +31,9 @@ function Technology() {
 	const [activeDestination, setActiveDestination] = useState(destinations[1]);
 
 	return (
-		<div className="bg-[url(./assets/DesktopTech.jpg)] bg-no-repeat bg-cover h-screen flex justify-between items-start flex-col pt-20 max-[1025px]:gap-y-10 max-[1025px]:justify-start max-[637px]:pt-10 max-[637px]:px-5">
+		<div className="bg-black bg-[url(./assets/DesktopTech.jpg)] bg-no-repeat bg-cover h-screen flex justify-between items-start flex-col pt-20 max-[1025px]:gap-y-10 max-[1025px]:justify-start max-[637px]:pt-10 max-[637px]:px-5">
 			<div className="pl-52 pt-[50px] max-[1025px]:px-10 max-[637px]:pl-0">
-				<h1 className="text-white text-3xl max-[637px]:text-2xl">
+				<h1 className="text-white text-3xl max-[637px]:text-2xl font-BarlowCondensed tracking-widest">
 					<span>03 </span>SPACE LAUNCH 101
 				</h1>
 			</div>
@@ -55,9 +55,9 @@ function Technology() {
 						))}
 					</ul>
 					<div className="flex flex-col justify-between h-[303px] w-[512px] pl-5 gap-x-5 max-[1025px]:m-auto max-[1025px]:text-center max-[637px]:w-full max-[637px]:pl-0 max-[637px]:h-auto">
-						<h3 className="text-white text-xl max-[1025px]:mb-5 max-[637px]:text-lg">{activeDestination.job}</h3>
-						<h1 className="text-6xl max-[1025px]:mb-5 max-[637px]:text-3xl">{activeDestination.name}</h1>
-						<p className="text-lg leading-8 w-[450px] h-[192px] max-[1025px]:w-full max-[637px]:text-sm max-[637px]:w-full max-[637px]:h-auto">
+						<h3 className="text-white text-xl max-[1025px]:mb-5 max-[637px]:text-lg font-BarlowCondensed tracking-widest">{activeDestination.job}</h3>
+						<h1 className="text-6xl max-[1025px]:mb-5 max-[637px]:text-3xl font-Bellefair">{activeDestination.name}</h1>
+						<p className="text-lg leading-8 w-[450px] h-[192px] max-[1025px]:w-full max-[637px]:text-sm max-[637px]:w-full max-[637px]:h-auto font-Barlow">
 							{activeDestination.description}
 						</p>
 					</div>

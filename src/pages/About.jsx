@@ -57,13 +57,13 @@ function Destination() {
 	};
 
 	return (
-		<div className="bg-[url(./assets/DesktopDestination.jpg)] bg-no-repeat bg-cover h-screen flex justify-center items-start flex-col pt-20 max-[1025px]:justify-start max-[637px]:pt-20 max-[637px]:px-5">
+		<div className="bg-black bg-[url(./assets/DesktopDestination.jpg)] bg-no-repeat bg-cover h-screen flex justify-between items-start flex-col pt-20 max-[1025px]:justify-start max-[637px]:pt-20 max-[637px]:px-5 max-[637px]:gap-y-10">
 			<div className='pl-52 pt-[50px] max-[1025px]:px-10 max-[637px]:pl-0 max-[637px]:pt-0'>
-				<h1 className='text-white text-3xl max-[637px]:text-xl'>
+				<h1 className='text-white text-3xl max-[637px]:text-xl font-BarlowCondensed tracking-widest'>
 					<span>01 </span>PICK YOUR DESTINATION
 				</h1>
 			</div>
-			<div className="w-full flex justify-between items-center p-36 px-52 max-[1025px]:flex-col max-[1025px]:py-20 max-[1025px]:pb-0 max-[769px]:py-5 max-[637px]:px-0 max-[637px]:pt-5">
+			<div className="w-full flex justify-between items-center p-36 px-52 max-[1025px]:flex-col max-[1025px]:py-20 max-[1025px]:pb-0 max-[769px]:py-5 max-[637px]:px-0 max-[637px]:pt-5 max-[637px]:gap-y-10">
 				<motion.div
 					variants={imageVariants}
 					initial="hidden"
@@ -74,13 +74,13 @@ function Destination() {
 				>
 					<img src={activeDestination.image} alt={activeDestination.name} className='max-[637px]:w-40 max-[637px]:h-40 -z-10' />
 				</motion.div>
-				<div className="w-[445px] h-[472px] text-white flex flex-col justify-between max-[1025px]:text-center max-[769px]:h-fit max-[769px]:gap-y-4 max-[637px]:w-full max-[637px]:gap-y-2">
+				<div className="w-[445px] h-[472px] text-white flex flex-col justify-between max-[1025px]:text-center max-[769px]:h-fit max-[769px]:gap-y-4 max-[637px]:w-full max-[637px]:gap-y-5">
 					<ul className="text-white flex w-fit gap-x-5 max-[1025px]:m-auto max-[1025px]:my-0 max-[637px]:gap-x-3">
 						{Object.keys(destinations).map((key) => (
 							<li
 								key={key}
 								onClick={() => setActiveDestination(destinations[key])}
-								className={`cursor-pointer text-lg border-b-4 border-transparent hover:border-white ${
+								className={`cursor-pointer text-xl border-b-4 border-transparent hover:border-white font-BarlowCondensed tracking-widest ${
 									activeDestination.name === destinations[key].name ? 'border-white' : ''
 								}`}
 							>
@@ -89,7 +89,7 @@ function Destination() {
 						))}
 					</ul>
 					<motion.h1
-						className="text-8xl max-[637px]:text-5xl"
+						className="text-8xl max-[637px]:text-5xl font-Bellefair"
 						variants={fadeIn}
 						initial="hidden"
 						animate="visible"
@@ -99,7 +99,7 @@ function Destination() {
 						{activeDestination.name}
 					</motion.h1>
 					<motion.p
-						className="text-lg leading-8 h-[128px] max-[637px]:text-sm max-[637px]:leading-6 max-[637px]:h-auto"
+						className="text-lg leading-8 h-[128px] max-[637px]:text-sm max-[637px]:leading-6 max-[637px]:h-auto font-Barlow"
 						variants={fadeIn}
 						initial="hidden"
 						animate="visible"
@@ -111,12 +111,12 @@ function Destination() {
 					<hr className="max-[637px]:my-4" />
 					<div className="flex justify-between max-[637px]:flex-row max-[637px]:gap-y-3">
 						<div className="w-1/2 max-[637px]:w-full">
-							<div className="text-xs">AVG. DISTANCE</div>
-							<div className="text-3xl max-[637px]:text-xl">{activeDestination.distance}</div>
+							<div className="text-lg tracking-widest font-BarlowCondensed">AVG. DISTANCE</div>
+							<div className="text-3xl max-[637px]:text-xl font-Bellefair">{activeDestination.distance}</div>
 						</div>
 						<div className="w-1/2 max-[637px]:w-full">
-							<div className="text-xs">EST. TRAVEL TIME</div>
-							<div className="text-3xl max-[637px]:text-xl">{activeDestination.travelTime}</div>
+							<div className="text-lg tracking-widest font-BarlowCondensed">EST. TRAVEL TIME</div>
+							<div className="text-3xl max-[637px]:text-xl font-Bellefair">{activeDestination.travelTime}</div>
 						</div>
 					</div>
 				</div>
