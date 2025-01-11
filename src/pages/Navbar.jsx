@@ -23,16 +23,16 @@ function Navbar() {
 
 			{/* Desktop Links */}
 			<ul className='hidden lg:flex gap-3 text-white gap-x-10 translate-x-2 font-BarlowCondensed'>
-				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/' ? 'border-white' : ''}`}>
+				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/' ? 'border-white' : ''} transition-all`}>
 					<Link className="py-8 tracking-widest text-xl" to="/"><span className='font-bold'>00</span> Home</Link>
 				</li>
-				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/about' ? 'border-white' : ''}`}>
+				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/about' ? 'border-white' : ''} transition-all`}>
 					<Link className="py-8 tracking-widest text-xl" to="/about"><span className='font-bold'>01</span> Destination</Link>
 				</li>
-				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/contact' ? 'border-white' : ''}`}>
+				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/contact' ? 'border-white' : ''} transition-all`}>
 					<Link className="py-8 tracking-widest text-xl" to="/contact"><span className='font-bold'>02</span> Crew</Link>
 				</li>
-				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/technology' ? 'border-white' : ''}`}>
+				<li className={`h-20 flex justify-center items-center border-transparent border-b-4 hover:border-white ${location.pathname === '/technology' ? 'border-white' : ''} transition-all`}>
 					<Link className="py-8 tracking-widest text-xl" to="/technology"><span className='font-bold'>03</span> Technology</Link>
 				</li>
 			</ul>
