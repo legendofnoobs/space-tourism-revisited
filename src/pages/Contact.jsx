@@ -66,7 +66,7 @@ function Destination() {
 					</ul>
 				</div>
 				<div className='h-[702px] flex justify-center items-end max-[1025px]:w-96 max-[1025px]:h-[600px] max-[769px]:h-fit max-[637px]:w-auto max-[637px]:h-[255px]'>
-					<img className='w-full max-[637px]:h-full' src={activeDestination.image} alt={activeDestination.name} />
+					<img className='w-auto max-[637px]:h-full' src={activeDestination.image} alt={activeDestination.name} />
 				</div>
 			</div>
 		</div>
